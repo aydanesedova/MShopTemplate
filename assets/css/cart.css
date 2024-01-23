@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  min-height: 53px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: center;
+}
+header .headContainer {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .headContainer .shopList {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: end;
+  margin-top: 15px;
+}
+header .headContainer .shopList ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  list-style: none;
+  width: 80%;
+  gap: 40px;
+}
+header .headContainer .shopList ul a {
+  text-decoration: none;
+}
+header .headContainer .shopList ul a li {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);
+  transition: 0.5s ease;
+}
+header .headContainer .shopList ul a li:hover {
+  color: #f41068;
+}
+header .headContainer .shopList ul a li i {
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+header .headContainer .shopList ul a li i:hover {
+  color: #F637A4;
+  font-size: 20px;
+}
+header .headContainer .dropdown {
+  display: none;
+}
+header .headContainer .dropdown button {
+  background-color: white;
+  border: none;
+  font-size: 22px;
+  color: #000;
+}
+
+@media screen and (max-width: 700px) {
+  header .headContainer .shopList {
+    display: none;
+  }
+  header .headContainer .dropdown {
+    display: block;
+  }
+  header .headContainer .dropdown .dropdown-menu {
+    padding-left: 15px;
+  }
+  header .headContainer .dropdown .dropdown-menu a {
+    text-decoration: none;
+  }
+  header .headContainer .dropdown .dropdown-menu a li {
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+    transition: 0.5s ease;
+  }
+  header .headContainer .dropdown .dropdown-menu a li:hover {
+    color: #f41068;
+  }
+  header .headContainer .dropdown .dropdown-menu a li i {
+    cursor: pointer;
+    transition: 0.4s ease;
+  }
+  header .headContainer .dropdown .dropdown-menu a li i:hover {
+    color: #F637A4;
+    font-size: 20px;
+  }
+}
+main #cart {
+  min-height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main #cart h2 {
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+}
+main #cart #cartProducts {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main #cart #cartProducts .box {
+  width: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+main #cart #cartProducts .box img {
+  width: 80%;
+  border-radius: 15px;
+}
+main #cart #cartProducts .box h2 {
+  font-size: 20px;
+  line-height: 43px;
+  font-weight: 600;
+  color: #222;
+  font-family: Poppins, sans-serif;
+}
+main #cart #cartProducts .box button {
+  border: none;
+  background-color: white;
+  color: #F637A4;
+  transition: 0.5s ease;
+  font-weight: 600;
+}
+main #cart #cartProducts .box button:hover {
+  color: #c83187;
+}
+main #cart #cartProducts .box button i {
+  font-size: 20px;
+}
+
+footer {
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222222;
+}
+footer .aboutUs {
+  width: 100%;
+}
+footer .aboutUs h4 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #fff;
+  font-family: Poppins, sans-serif;
+}
+footer .aboutUs p {
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #777;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+}
+footer .newsletter {
+  width: 100%;
+}
+footer .newsletter h4 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #fff;
+  font-family: Poppins, sans-serif;
+}
+footer .newsletter p {
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #777;
+  display: flex;
+  min-height: 35px;
+  align-items: end;
+  font-family: Poppins, sans-serif;
+}
+footer .newsletter .enterEmail {
+  width: 90%;
+  background-color: #191919;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .newsletter .enterEmail input {
+  border: none;
+  background-color: transparent;
+  width: 80%;
+  margin-left: 15px;
+}
+footer .newsletter .enterEmail button {
+  min-height: 40px;
+  width: 20%;
+  border: none;
+  background-color: #F63891;
+}
+footer .newsletter .enterEmail button i {
+  color: #fff;
+}
+footer .instagramFeed {
+  width: 100%;
+}
+footer .instagramFeed h4 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #fff;
+  font-family: Poppins, sans-serif;
+}
+footer .followUs {
+  width: 100%;
+}
+footer .followUs h4 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #fff;
+  font-family: Poppins, sans-serif;
+}
+footer .followUs p {
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #777;
+  display: flex;
+  min-height: 35px;
+  align-items: end;
+  font-family: Poppins, sans-serif;
+}
+footer .followUs .socialMedia {
+  display: flex;
+  gap: 15px;
+}
+footer .followUs .socialMedia i {
+  color: #777;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+footer .followUs .socialMedia i:hover {
+  color: #F63891;
+}
+footer .copyright {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .copyright p {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777;
+}
+footer .copyright p i {
+  color: #F63891;
+}
+footer .copyright p span {
+  cursor: pointer;
+  color: #F63891;
+}
